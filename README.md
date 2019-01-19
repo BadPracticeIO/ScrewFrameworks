@@ -1,1 +1,1 @@
-# Major opinions (In Progress)
+# Major Opinions (In Progress)
