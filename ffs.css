@@ -10,7 +10,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 strong {font-weight: bold;}
 em {font-style: italic;}
 
-html,body{height:100%}
 body {font-family: sans-serif;font-size: 12px;line-height: 21px;color: #171717;counter-reset: my-sec-counter;}
 
 h1 {font-size: 48px; line-height: 48px;}
