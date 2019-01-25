@@ -44,28 +44,26 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .fthf {flex: 0 25%;}
 
 /* Margin */
-.m-t-o {top: 0 !important;}
-.m-t-f {margin-top: 5px !important;}
-.m-t-t {margin-top: 10px !important;}
+.m-t-o  {top: 0 !important;}
+.m-t-f  {margin-top: 5px !important;}
+.m-t-t  {margin-top: 10px !important;}
 .m-t-tt {margin-top: 20px !important;}
-
-.m-l-o {margin-left: 0 !important;}
-.m-l-t {margin-left: 10px !important;}
-
-.m-b-o {margin-bottom: 0 !important;}
-.m-b-f {margin-bottom: 5px !important;}
-.m-b-t {margin-bottom: 10px !important;}
+.m-l-o  {margin-left: 0 !important;}
+.m-l-f  {margin-left: 5 !important;}
+.m-l-t  {margin-left: 10px !important;}
+.m-l-tt {margin-left: 20px !important;}
+.m-b-o  {margin-bottom: 0 !important;}
+.m-b-f  {margin-bottom: 5px !important;}
+.m-b-t  {margin-bottom: 10px !important;}
 .m-b-ft {margin-bottom: 15px !important;}
 .m-b-tt {margin-bottom: 20px !important;}
-
-.m-r-f {margin-right: 5px !important;}
-.m-r-t {margin-right: 10px !important}
+.m-r-o  {margin-right: 0px !important;}
+.m-r-f  {margin-right: 5px !important;}
+.m-r-t  {margin-right: 10px !important}
 .m-r-tt {margin-right: 20px !important;}
 
 .m-v-t {margin: 10px 0 !important;}
-
 .m-h-f {margin: 0 5px !important;}
-
 .m-a-a {margin: auto !important;}
 
 /* Padding */
