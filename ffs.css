@@ -101,19 +101,19 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 /* Positioning & Sizing */
 .fw {width: 100% !important;}
 .fh {height: 100% !important;}
+.fvh {height: 100vh !important;}
 .cd {cursor: default !important;}
 .cp {cursor: pointer !important;}
 .blk {display: block !important;}
 .ib  {display: inline-block !important;}
 .none {display: none !important;}
-.bb  {box-sizing: border-box !important;}
+.bb {box-sizing: border-box !important;}
 .oh {overflow: hidden;}
-.pa  {position: absolute !important;}
-.pr  {position: relative !important;}
+.pa {position: absolute !important;}
+.pr {position: relative !important;}
+.ps {position: sticky !important;position: -webkit-sticky !important;}
 .tac {text-align: center !important;}
 .tar {text-align: right !important;}
-.posr {position: relative !important;}
-.posa {position: absolute !important;}
 .p-t {top: 0;}
 .p-b {bottom: 0;}
 .p-l {left: 0;}
