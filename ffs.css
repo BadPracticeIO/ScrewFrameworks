@@ -51,12 +51,12 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .m-t-tt {margin-top: 20px !important;}
 
 .m-l-o  {margin-left: 0 !important;}
-.m-l-f  {margin-left: 5 !important;}
+.m-l-f  {margin-left: 5px !important;}
 .m-l-t  {margin-left: 10px !important;}
 .m-l-ft {margin-left: 15px !important;}
 .m-l-tt {margin-left: 20px !important;}
 
-.m-r-o  {margin-right: 0px !important;}
+.m-r-o  {margin-right: 0 !important;}
 .m-r-f  {margin-right: 5px !important;}
 .m-r-t  {margin-right: 10px !important}
 .m-r-ft {margin-right: 15px !important}
@@ -73,36 +73,46 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .m-a-a {margin: auto !important;}
 
 /* Padding */
+.p-v-o {padding-top: 0 !important;padding-bottom: 0 !important;}
 .p-v-f {padding-top: 5px !important;padding-bottom: 5px !important;}
 .p-v-t {padding-top: 10px !important;padding-bottom: 10px !important;}
 .p-v-ft {padding-top: 15px !important;padding-bottom: 15px !important;}
 .p-v-tt {padding-top: 20px !important;padding-bottom: 20px !important;}
 
+.p-h-o {padding-left: 0 !important;padding-right: 0 !important;}
 .p-h-f {padding-left: 5px !important;padding-right: 5px !important;}
 .p-h-t {padding-left: 10px !important;padding-right: 10px !important;}
 .p-h-ft {padding-left: 15px !important;padding-right: 15px !important;}
 .p-h-tt {padding-left: 20px !important;padding-right: 20px !important;}
 
+.p-a-o {padding: 0 !important;}
 .p-a-f {padding: 5px !important;}
 .p-a-t {padding: 10px !important;}
+.p-a-ft {padding: 15px !important;}
 .p-a-tt {padding: 20px !important;}
 
 .p-t-o {padding-top: 0 !important;}
 .p-t-f {padding-top: 5px !important;}
 .p-t-t {padding-top: 10px !important;}
+.p-t-ft {padding-top: 15px !important;}
 .p-t-tt {padding-top: 20px !important;}
+
 .p-b-o {padding-bottom: 0 !important;}
 .p-b-f {padding-bottom: 5px !important;}
 .p-b-t {padding-bottom: 10px !important;}
+.p-b-ft {padding-bottom: 15px !important;}
 .p-b-tt {padding-bottom: 20px !important;}
 
 .p-l-o {padding-left: 0 !important;}
 .p-l-f {padding-left: 5px !important;}
 .p-l-t {padding-left: 10px !important;}
+.p-l-ft {padding-left: 15px !important;}
 .p-l-tt {padding-left: 20px !important;}
+
 .p-r-o {padding-right: 0 !important;}
 .p-r-f {padding-right: 5px !important;}
 .p-r-t {padding-right: 10px !important;}
+.p-r-ft {padding-right: 15px !important;}
 .p-r-tt {padding-right: 20px !important;}
 
 /* Positioning & Sizing */
@@ -114,6 +124,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .blk {display: block !important;}
 .ib  {display: inline-block !important;}
 .none {display: none !important;}
+.show {display: flex !important;}
 .bb {box-sizing: border-box !important;}
 .oh {overflow: hidden;}
 .pa {position: absolute !important;}
