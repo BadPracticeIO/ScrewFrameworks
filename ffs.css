@@ -68,8 +68,10 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .m-b-ft {margin-bottom: 15px !important;}
 .m-b-tt {margin-bottom: 20px !important;}
 
-.m-v-t {margin: 10px 0 !important;}
-.m-h-f {margin: 0 5px !important;}
+.m-v-f {margin-top: 5px !important;margin-bottom: 5px !important}
+.m-v-t {margin-top: 10px !important;margin-bottom: 10px !important}
+.m-h-f {margin-left: 5px !important;margin-right: 5px !important;}
+.m-h-t {margin-left: 10px !important;margin-right: 10px !important}
 .m-a-a {margin: auto !important;}
 
 /* Padding */
@@ -126,6 +128,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .none {display: none !important;}
 .show {display: flex !important;}
 .bb {box-sizing: border-box !important;}
+.oa {overflow: auto;}
 .oh {overflow: hidden;}
 .pa {position: absolute !important;}
 .pr {position: relative !important;}
@@ -162,8 +165,9 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .no-bg {background: none !important;}
 .w-t-bg {background: rgba(180,180,255,.03) !important;}
 .b-t-bg {background: rgba(20,20,20,.9) !important;}
+.g-t-bg {background: rgba(20,20,20,.08) !important;}
 .b-bg {background: #1a1f25 !important;}
-.bb-bg {background: #0e0e0e !important;}
+.bb-bg {background: #0F0F0F !important;}
 .w-bg {background: #FFF !important;}
 .ruby {background: -webkit-linear-gradient(45deg, #96006D 0%, #BD0313 100%) !important;}
 .emerald {background: -webkit-linear-gradient(45deg, #0C7C61 0%, #28A251 100%) !important;}
