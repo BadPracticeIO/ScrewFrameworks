@@ -231,7 +231,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .sm-txt {font-size: 10px;}
 .xs-txt {font-size: 8px;}
 sup {vertical-align: super;font-size: smaller; }
-
+.nh {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .notr,.notrc * {transition: none;-webkit-transition: none;-moz-transition: none;}
 
 .b {font-weight: bold !important;}
