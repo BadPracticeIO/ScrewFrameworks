@@ -204,6 +204,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 /* Positioning & Sizing */
 .fw {width: 100% !important;}
 .fh {height: 100% !important;}
+.fvw {width: 100vw !important;}
 .fvh {height: 100vh !important;}
 .cd {cursor: default !important;}
 .cp {cursor: pointer !important;}
@@ -215,7 +216,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .bb {box-sizing: border-box !important;}
 .oa {overflow: auto;}
 .oh {overflow: hidden;}
-.oyh {overflow: hidden;}
+.oyh {overflow-y: hidden;}
 .pa {position: absolute !important;}
 .pf {position: fixed !important;}
 .pr {position: relative !important;}
@@ -230,6 +231,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .md-txt {font-size: 11px;}
 .sm-txt {font-size: 10px;}
 .xs-txt {font-size: 8px;}
+.strike {text-decoration: line-through;}
 sup {vertical-align: super;font-size: smaller; }
 .nh {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .notr,.notrc * {transition: none;-webkit-transition: none;-moz-transition: none;}
