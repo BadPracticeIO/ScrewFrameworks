@@ -228,9 +228,9 @@ h1,h2,h3,h4,h5,h6 {font-weight: 200;}
 .p-l {left: 0;}
 .p-r {right: 0;}
 .zi-ot {z-index: 1000;}
-.md-txt {font-size: 11px;}
-.sm-txt {font-size: 10px;}
-.xs-txt {font-size: 8px;}
+.md-txt {font-size: 11px !important;}
+.sm-txt {font-size: 10px !important;}
+.xs-txt {font-size: 8px !important;}
 .strike {text-decoration: line-through;}
 sup {vertical-align: super;font-size: smaller; }
 .nh {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
