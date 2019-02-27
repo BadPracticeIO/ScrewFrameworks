@@ -1,0 +1,249 @@
+@charset "UTF-8"
+
+// Functions
+@function capitalize($string)
+  @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2)
+
+/* Reset */
+body
+  margin: 0
+  font-variant-ligatures: none
+  text-rendering: geometricPrecision
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  text-shadow: rgba(0,0,0,.01) 0 0 1px
+table
+  border-collapse: separate
+  border-spacing: 0
+caption,
+th,
+td
+  font-weight: normal
+  text-align: left
+strong
+  font-weight: bold
+em
+  font-style: italic
+
+/* font-family: 'Source Code Pro', monospace;*/
+body
+  background: #060606
+  font: 12px Helvetica, sans-serif
+  color: #333
+
+/* Headers */
+@for $i from 1 through 6
+  h#{$i}
+    font-size: #{18 + 6 * (6 - $i)}px
+
+/* Flex */
+.cw
+  flex-flow: column wrap
+.rw
+  flex-flow: row wrap
+
+.sf
+  justify-content: flex-start
+.cf
+  justify-content: center
+.ef
+  justify-content: flex-end
+
+.ssf
+  align-self: flex-start
+.csf
+  align-self: center
+.esf
+  align-self: flex-end
+
+.ff
+  flex: 0 100%
+.tqf
+  flex: 0 75%
+.tf
+  flex: 0 calc(100%/3)
+.hf
+  flex: 0 50%
+.qf
+  flex: 0 25%
+
+$devices: ('desktop', 'mobile')
+$types: ('padding', 'margin')
+$directions: ('top', 'bottom', 'left', 'right', 'all', 'horizontal', 'vertical')
+$size: 0
+
+@each $device in $devices
+  /* #{capitalize($device)} */
+  @media only screen and (#{if($device == 'mobile','max-width: 767px', 'min-width: 768px')})
+    // Margin & Padding
+    @each $type in $types
+      @each $direction in $directions
+        @if $direction == 'all' or $direction == 'horizontal' or $direction == 'vertical'
+          /* #{capitalize($type)} #{capitalize($direction)} */
+        @if $type == 'margin'
+          .#{if($device == 'mobile', 'm-', '')}#{str-slice($type, 0, 2)}-#{str-slice($direction, 0, 1)}-a
+            @if $direction == 'all'
+              #{$type}: auto
+            @else if $direction == 'horizontal'
+              #{$type}-left: auto
+              #{$type}-right: auto
+            @else if $direction == 'vertical'
+              #{$type}-top: auto
+              #{$type}-bottom: auto
+        @if $direction != 'all' and $direction != 'horizontal' and $direction != 'vertical'
+          /* #{capitalize($type)} #{capitalize($direction)} */
+        @for $i from 1 through 7
+          .#{if($device == 'mobile', 'm-', '')}#{str-slice($type, 0, 2)}-#{str-slice($direction, 0, 1)}-#{$size}
+            @if $direction == 'all'
+              #{$type}: #{$size}#{if($size == 0, null, 'px')}
+            @else if $direction == 'horizontal'
+              #{$type}-left: #{$size}#{if($size == 0, null, 'px')}
+              #{$type}-right: #{$size}#{if($size == 0, null, 'px')}
+            @else if $direction == 'vertical'
+              #{$type}-top: #{$size}#{if($size == 0, null, 'px')}
+              #{$type}-bottom: #{$size}#{if($size == 0, null, 'px')}
+            @else
+              #{$type}-#{$direction}: #{$size}#{if($size == 0, null, 'px')}
+          $size: ($size + 5)
+        $size: 0
+    // Position
+    @each $direction in $directions
+      @if $direction == 'top' or $direction == 'bottom' or $direction == 'left' or $direction == 'right'
+        @for $i from 1 through 7
+          .#{if($device == 'mobile', 'm-', '')}po-#{str-slice($direction, 0, 1)}-#{$size}
+            #{$direction}: #{$size}#{if($size == 0, null, 'px')}
+          $size: ($size + 5)
+        $size: 0
+    // Responsive none vs Global
+    .#{if($device == 'mobile', 'm', 'd')}f
+      display: flex
+      justify-content: space-between
+    .#{if($device == 'mobile', 'm', 'd')}n
+      display: none
+
+.fw
+  width: 100%
+.fh
+  height: 100%
+.fvw
+  width: 100vw
+.fvh
+  height: 100vh
+.cd
+  cursor: default
+.cp
+  cursor: pointer
+.blk
+  display: block
+.iblk
+  display: inline-block
+.grid
+  display: grid
+.none
+  display: none // Global none vs responsive.
+.show
+  display: flex
+.bb
+  box-sizing: border-box
+.oa
+  overflow: auto
+.oh
+  overflow: hidden
+.oyh
+  overflow-y: hidden
+.pa
+  position: absolute
+.pf
+  position: fixed
+.pr
+  position: relative
+.ps
+  position: sticky
+  position: -webkit-sticky
+.tac
+  text-align: center
+.tar
+  text-align: right
+.zi-ot
+  z-index: 1000
+.md-txt
+  font-size: 11px
+.sm-txt
+  font-size: 10px
+.xs-txt
+  font-size: 8px
+.strike
+  text-decoration: line-through
+sup
+  vertical-align: super
+  font-size: smaller
+.nh
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.notr,
+.notrc *
+  transition: none
+.b
+  font-weight: bold
+.i
+  font-style: italic
+.no-br
+  border-radius: 0
+.br
+  border-radius: 2px
+.f-br
+  border-radius: 100%
+/* Text Colors */
+.bt
+  color: #222
+.et
+  color: #28A251
+.wt
+  color: #FFF
+.w-t-t
+  color: rgba(255,255,255,.6)
+.grt
+  color: #586479
+.pt
+  color: #80F
+.ft
+  color: #df4b00
+.st
+  color: #3399ff
+.rt
+  color: #BD0313
+.glt
+  color: #ffd700
+/* Backgrounds */
+.no-bg
+  background-color: unset !important
+.w-t-bg
+  background-color: rgba(180,180,255,.03)
+.w-tt-bg
+  background-color: rgba(255,255,255,.15)
+.b-t-bg
+  background-color: rgba(20,20,20,.9)
+.g-t-bg
+  background-color: rgba(20,20,20,.08)
+.b-bg
+  background-color: #1a1f25
+.bb-bg
+  background-color: #0F0F0F
+.w-bg
+  background-color: #FFF
+.smoke
+  background: linear-gradient(45deg, #2e3136 0%, #2f2f2f 100%)
+.ruby
+  background: linear-gradient(45deg, #96006D 0%, #BD0313 100%)
+.emerald
+  background: linear-gradient(45deg, #0C7C61 0%, #28A251 100%)
+.fire
+  background: linear-gradient(45deg, #d92900 0%, #df4b00 100%)
+.violet
+  background: linear-gradient(45deg, #4B0082 0%, #4F00C2 100%)
+.sapphire
+  background: linear-gradient(45deg, #0f52ba 0%, #1375c7 100%)
