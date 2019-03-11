@@ -480,3 +480,5 @@ sup { vertical-align: super; font-size: smaller; }
 .sapphire { background: linear-gradient(45deg, #0f52ba 0%, #1375c7 100%); }
 
 .btn { height: 38px; line-height: 39px; color: #FFF; padding: 0 14px; border-radius: 2px; cursor: pointer; }
+
+.deep { pointer-events: none; }
