@@ -25,6 +25,19 @@ body { font: 12px Helvetica, sans-serif; color: #333; }
 
 .fw9 { font-weight: 900; }
 
+/* Line Height */
+lh1 { line-height: 32px; }
+
+lh2 { line-height: 28px; }
+
+lh3 { line-height: 24px; }
+
+lh4 { line-height: 20px; }
+
+lh5 { line-height: 16px; }
+
+lh6 { line-height: 12px; }
+
 /* Headers */
 h1 { font-size: 54px; line-height: 54px; }
 

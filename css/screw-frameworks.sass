@@ -48,6 +48,11 @@ body
 .fw9
   font-weight: 900
 
+/* Line Height */
+@for $i from 1 through 6
+  lh#{$i}
+    line-height: #{12 + 4 * (6 - $i)}px
+
 /* Headers */
 @for $i from 1 through 6
   h#{$i}
