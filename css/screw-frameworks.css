@@ -26,17 +26,17 @@ body { font: 12px Helvetica, sans-serif; color: #333; }
 .fw9 { font-weight: 900; }
 
 /* Headers */
-h1 { font-size: 54px; line-height: 54px; }
+h1 { font-size: 54px; }
 
-h2 { font-size: 46px; line-height: 46px; }
+h2 { font-size: 46px; }
 
-h3 { font-size: 38px; line-height: 38px; }
+h3 { font-size: 38px; }
 
-h4 { font-size: 30px; line-height: 30px; }
+h4 { font-size: 30px; }
 
-h5 { font-size: 22px; line-height: 22px; }
+h5 { font-size: 22px; }
 
-h6 { font-size: 14px; line-height: 14px; }
+h6 { font-size: 14px; }
 
 /* Line Height */
 lh1 { line-height: 32px; }
