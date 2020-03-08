@@ -138,6 +138,11 @@ $size: 0
           .#{if($device == 'mobile', 'm-', '')}po-#{str-slice($direction, 0, 1)}-#{$size}
             #{$direction}: #{$size}#{if($size == 0, null, 'px')}
           $size: ($size + 5)
+        $size: 5
+        @for $i from 1 through 6
+          .#{if($device == 'mobile', 'm-', '')}po-#{str-slice($direction, 0, 1)}--#{$size}
+            #{$direction}: -#{$size}#{if($size == 0, null, 'px')}
+          $size: ($size + 5)
         $size: 0
     // Responsive none vs Global
     .#{if($device == 'mobile', 'm', 'd')}f
